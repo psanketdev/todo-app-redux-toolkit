@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoContainer from './components/TodoContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mt-5 w-7/12 mx-auto flex items-center flex-col'>
+      <h1 className='text-center font-bold text-orange-400 text-xl mb-4'>Todo App Redux</h1>
+      <TodoContainer />
     </div>
   );
 }
